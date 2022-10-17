@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3d3737"
+    android:padding="20dp"
+    tools:context="Manager.freemilk">
+
+
+    <TextView
+        android:id="@+id/title1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="52dp"
+        android:fontFamily="arial"
+        android:paddingBottom="10sp"
+        android:text="Libreng Gatas Program "
+        android:textColor="#fda47e"
+        android:textSize="25dp" />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#f2efdb"
+        android:textColorHint="#f2efdb"
+        android:id="@+id/parent"
+        android:layout_below="@+id/title1"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/freeparentE"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#f2efdb"
+            android:maxLength="50"
+            android:hint="Name of Parent" />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#f2efdb"
+        android:textColorHint="#f2efdb"
+        android:id="@+id/child"
+        android:layout_below="@+id/parent"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/freechildE"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#f2efdb"
+            android:maxLength="50"
+            android:hint="Name of Child" />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#f2efdb"
+        android:textColorHint="#f2efdb"
+        android:id="@+id/age"
+        android:layout_below="@+id/child"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/freeageE"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#f2efdb"
+            android:maxLength="50"
+            android:hint="Age of child" />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#f2efdb"
+        android:textColorHint="#f2efdb"
+        android:id="@+id/address"
+        android:layout_below="@+id/age"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/freeaddressE"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#f2efdb"
+            android:maxLength="50"
+            android:hint="Address" />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#f2efdb"
+        android:textColorHint="#f2efdb"
+        android:id="@+id/milk"
+        android:layout_below="@+id/address"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/freebrandE"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#f2efdb"
+            android:maxLength="50"
+            android:hint="Milk Brand" />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#f2efdb"
+        android:textColorHint="#f2efdb"
+        android:id="@+id/contact"
+        android:layout_below="@+id/milk"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/freecontactE"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#f2efdb"
+            android:maxLength="50"
+            android:hint="Contact Number" />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/freeprocceed"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/contact"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="116dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:backgroundTint="#b97a57"
+        android:text="Proceed" />
+
+    <TextView
+        android:id="@+id/freestatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="35dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginBottom="272dp"
+        android:visibility="invisible"
+        android:textColor="@color/white"
+        android:hint="Status"
+        android:textSize="30dp" />
+
+</RelativeLayout>

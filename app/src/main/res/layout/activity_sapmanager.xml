@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3d3737"
+    android:padding="20dp"
+    tools:context="Manager.sapmanager">
+
+    <TextView
+        android:id="@+id/sap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="43dp"
+        android:fontFamily="arial"
+        android:gravity="center_horizontal"
+        android:paddingBottom="10sp"
+        android:text="Welcome to Social Amelioration Program "
+        android:textAlignment="center"
+        android:textColor="#fda47e"
+        android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/sapphoto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/salary"
+        android:layout_alignParentLeft="true"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="13dp"
+        android:fontFamily="arial"
+        android:paddingBottom="10sp"
+        android:text="Valid Id Required"
+        android:textColor="#fda47e"
+        android:textSize="15dp" />
+
+
+    <Button
+        android:id="@+id/sapfilebutton"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sapphoto"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="42dp"
+        android:layout_marginEnd="128dp"
+        android:layout_marginRight="128dp"
+        android:backgroundTint="#b97a57"
+        android:text="Choose File" />
+
+    <Button
+        android:id="@+id/sapprocceed"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sapphoto"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="43dp"
+        android:layout_marginRight="29dp"
+        android:backgroundTint="#b97a57"
+        android:text="Proceed" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#f2efdb"
+        android:textColorHint="#f2efdb"
+        android:id="@+id/name"
+        android:layout_below="@+id/sap"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/sapnameE"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/cl1"
+            android:textColor="#f2efdb"
+            android:maxLength="50"
+            android:hint="Full Name" />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#f2efdb"
+
+        android:textColorHint="#f2efdb"
+        android:id="@+id/address"
+        android:layout_below="@+id/name"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/sapddressE"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/cl1"
+            android:textColor="#f2efdb"
+            android:maxLength="50"
+            android:hint="Address" />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#f2efdb"
+
+        android:textColorHint="#f2efdb"
+        android:id="@+id/contact"
+        android:layout_below="@+id/address"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/sapcontactE"
+            android:layout_width="match_parent"
+            android:inputType="number"
+            android:layout_height="wrap_content"
+            android:background="@color/cl1"
+            android:textColor="#f2efdb"
+            android:maxLength="50"
+            android:hint="Contact Number" />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#f2efdb"
+
+        android:textColorHint="#f2efdb"
+        android:id="@+id/occupation"
+        android:layout_below="@+id/contact"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/sapoccupationE"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/cl1"
+            android:textColor="#f2efdb"
+            android:maxLength="50"
+            android:hint="Occupation" />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#f2efdb"
+        android:textColorHint="#f2efdb"
+        android:id="@+id/salary"
+        android:layout_below="@+id/occupation"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/sapsalaryE"
+            android:inputType="numberDecimal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/cl1"
+            android:textColor="#f2efdb"
+            android:maxLength="50"
+            android:hint="Monthly Salary" />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <ImageView
+        android:id="@+id/sapimage"
+        android:layout_width="58dp"
+        android:layout_height="49dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="150dp"
+        android:layout_marginLeft="150dp"
+        android:layout_marginBottom="200dp"
+        android:visibility="visible" />
+
+
+</RelativeLayout>

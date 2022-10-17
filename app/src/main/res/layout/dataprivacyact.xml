@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    android:background="#3d3737"
+    tools:context=".MainActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Data Privacy Policy"
+            android:layout_centerHorizontal="true"
+            android:textColor="#fda47e"
+            android:textSize="40sp"
+            android:fontFamily="arial"
+            android:id="@+id/dataPrivacy"/>
+
+        <TextView
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:textColor="#f2efdb"
+            android:textSize="25sp"
+            android:layout_below="@+id/dataPrivacy"
+            android:fontFamily="arial"
+            android:id="@+id/content"
+            android:text="Data protection is of particular important to the management of Barangay Kamuning. The use of our District Aid Application is possible without any indication of personal data. However, if a data subject wishes to use special services of our Barangay Application, the processing of personal data may be necessary. If the processing of personal data is necessary and there is no legal basis for such processing, we generally obtain the consent of the data subject.
+The processing of personal data, such as the name, address, e-mail address or telephone number of a data subject, is always in accordance with the General Data Protection Regulation (GDPR) and in accordance with the country-specific data protection regulations applicable to us. By means of this data protection declaration, we would like to inform the public about the nature, scope and purpose of the personal data we collect, use and process. In addition, data subjects are informed about their rights by means of this data protection declaration.
+Barangay Kamuning admin, has implemented numerous technical and organizational measures to ensure the most complete protection of the personal data processed via this Application."/>
+
+        <Button
+            android:id="@+id/btn_dataprivacy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/content"
+            android:backgroundTint="#3d3737"
+            android:text="I Agree"
+            android:textColor="#fda47e"
+            android:textSize="25sp" />
+    </RelativeLayout>
+</ScrollView>

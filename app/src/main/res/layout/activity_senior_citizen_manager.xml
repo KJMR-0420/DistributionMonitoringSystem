@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3d3737"
+    android:padding="20dp"
+    tools:context="Manager.SeniorCitizenManager"
+    >
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="253dp"
+        android:layout_height="95dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:background="@drawable/upperbg" />
+
+    <TextView
+        android:id="@+id/Senior"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:fontFamily="arial"
+        android:paddingBottom="10sp"
+        android:padding="10dp"
+        android:layout_below="@+id/image"
+        android:text="Senior Citizen"
+        android:textColor="#fda47e"
+        android:textSize="25dp" />
+
+
+    <TextView
+        android:id="@+id/seniorphoto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/SeniorContact"
+        android:layout_alignParentLeft="true"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="arial"
+        android:paddingBottom="10sp"
+        android:text="Valid ID (Required) "
+        android:textColor="#fda47e"
+        android:textSize="15dp" />
+
+    <Button
+        android:id="@+id/SeniorFile"
+        android:layout_width="140dp"
+        android:layout_height="70dp"
+        android:layout_below="@+id/seniorphoto"
+        android:layout_alignParentLeft="true"
+        android:layout_marginEnd="128dp"
+        android:layout_marginRight="128dp"
+        android:backgroundTint="#b97a57"
+        android:text="Choose File" />
+
+    <Button
+        android:id="@+id/SeniorProceed"
+        android:layout_width="140dp"
+        android:layout_height="70dp"
+        android:layout_below="@+id/seniorphoto"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="3dp"
+        android:backgroundTint="#b97a57"
+        android:text="Proceed" />
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#f2efdb"
+
+        android:textColorHint="#f2efdb"
+        android:id="@+id/SeniorName"
+        android:layout_below="@+id/Senior"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/seniorNameE"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/cl1"
+            android:textColor="#f2efdb"
+            android:maxLength="50"
+            android:padding="20dp"
+            android:hint="Full Name" />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#f2efdb"
+
+        android:textColorHint="#f2efdb"
+        android:id="@+id/SeniorAddress"
+        android:layout_below="@+id/SeniorName"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/SeniorAddressE"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/cl1"
+            android:textColor="#f2efdb"
+            android:maxLength="50"
+            android:padding="20dp"
+            android:hint="Address" />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#f2efdb"
+
+        android:textColorHint="#f2efdb"
+        android:id="@+id/SeniorContact"
+        android:layout_below="@+id/SeniorAddress"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/SeniorContactE"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/cl1"
+            android:textColor="#f2efdb"
+            android:hint="Contact Number"
+            android:maxLength="50"
+            android:padding="20dp" />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <ImageView
+        android:id="@+id/seniorimage"
+        android:layout_width="64dp"
+        android:layout_height="67dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="270dp"
+        android:visibility="invisible" />
+
+
+</RelativeLayout>

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "955004008419",
+    "firebase_url": "https://dbmonitoring-c431a-default-rtdb.firebaseio.com",
+    "project_id": "dbmonitoring-c431a",
+    "storage_bucket": "dbmonitoring-c431a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:955004008419:android:c9debc229ea1179ee3d2d6",
+        "android_client_info": {
+          "package_name": "com.example.distributionmonitoring"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "955004008419-5rcmqp6gpg20k2lpr5q57bbkltfo7qfk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC7-E9IWpcD51T04VN5FqT6X_w8Evwnrs8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "955004008419-5rcmqp6gpg20k2lpr5q57bbkltfo7qfk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

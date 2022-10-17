@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".sendsms">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Send Message"
+                android:textSize="25dp"
+                android:textColor="@color/cl4"
+                android:background="@color/cl1"
+                android:textAlignment="center"
+                android:gravity="center_horizontal"/>
+            <EditText
+                android:id="@+id/smsphoneNo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="phone"
+                android:hint="Enter Phone Number"
+                android:textColorHint="@color/cl1"/>
+            <EditText
+                android:id="@+id/smsmessage"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:inputType="textLongMessage"
+                android:gravity="top"
+                android:hint="Enter Message"
+                android:textColorHint="@color/cl1"/>
+            <Button
+                android:id="@+id/smsbutton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Send"
+                android:textColor="@color/cl1" />
+        </LinearLayout>
+
+</LinearLayout>

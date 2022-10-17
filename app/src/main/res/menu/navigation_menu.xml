@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/Pwd"
+        android:icon="@drawable/pwd"
+        android:title="PWD Section"
+        />
+    <item
+        android:id="@+id/Sap"
+        android:icon="@drawable/sap"
+        android:title="SAP Section"
+        />
+    <item
+        android:id="@+id/SeniorCitizen"
+        android:icon="@drawable/senior"
+        android:title="Senior Citizen Section"
+        />
+    <item
+        android:id="@+id/Solo"
+        android:icon="@drawable/solo"
+        android:title="Solo Parents Section"
+        />
+    <item
+        android:id="@+id/Free"
+        android:icon="@drawable/bottle"
+        android:title="Free Milk Section"
+        />
+    <item
+        android:id="@+id/Vaccine"
+        android:icon="@drawable/vac"
+        android:title="Vaccine Section"
+        />
+
+
+
+</menu>

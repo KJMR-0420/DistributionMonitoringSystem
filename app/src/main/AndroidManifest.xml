@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.distributionmonitoring">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.SEND_SMS" />
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.DistributionMonitoring">
+        <activity android:name=".sendsms"/>
+        <activity android:name="UserlistClass.vaccinelist" />
+        <activity android:name="UserlistClass.soloparentlist" />
+        <activity android:name="UserlistClass.seniorlist" />
+        <activity android:name="UserlistClass.pwdlist" />
+        <activity android:name="UserlistClass.Freelist" />
+        <activity android:name="UserlistClass.Saplist" />
+
+
+        <activity android:name="AdminlistClass.vaccinelist" />
+        <activity android:name="AdminlistClass.soloparentlist" />
+        <activity android:name="AdminlistClass.seniorlist" />
+        <activity android:name="AdminlistClass.pwdlist" />
+        <activity android:name="AdminlistClass.Freelist" />
+        <activity android:name="AdminlistClass.Saplist" />
+        <activity android:name=".AdminDashboard" />
+        <activity android:name="ButtonClass.flubutton" />
+        <activity android:name="ButtonClass.freebutton" />
+        <activity android:name="ButtonClass.solobutton" />
+        <activity android:name="ButtonClass.seniorbutton" />
+        <activity android:name="ButtonClass.pwdbutton" />
+        <activity android:name="ButtonClass.Sapbutton" />
+        <activity android:name=".Admin" />
+        <activity android:name="Manager.freemilk" />
+        <activity android:name="Manager.ResetPasswordManager" />
+        <activity android:name="Manager.SeniorCitizenManager" />
+        <activity android:name=".transaction" />
+        <activity android:name="Manager.soloparentmanager" />
+        <activity android:name="Manager.vaccinemanager" />
+        <activity android:name="Manager.sapmanager" />
+        <activity android:name="Manager.Pwdmanager" />
+        <activity android:name=".Dashboard" />
+        <activity android:name="Manager.LoginManager" />
+        <activity android:name="Manager.RegistrationManager" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3d3737"
+    android:padding="20dp"
+    tools:context="Manager.vaccinemanager">
+
+
+    <TextView
+        android:id="@+id/flu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="87dp"
+        android:fontFamily="arial"
+        android:paddingBottom="10sp"
+        android:text="Flu Vaccine for Senior "
+        android:textColor="#fda47e"
+        android:textSize="25dp" />
+
+    <Button
+        android:id="@+id/vaccineprocceed"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/address"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:backgroundTint="#b97a57"
+        android:text="Proceed" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#f2efdb"
+        android:textColorHint="#f2efdb"
+        android:id="@+id/name"
+        android:layout_below="@+id/flu"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/vaccinenameE"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/cl1"
+            android:textColor="#f2efdb"
+            android:maxLength="50"
+            android:hint="Full Name" />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#f2efdb"
+
+        android:textColorHint="#f2efdb"
+        android:id="@+id/contactnum"
+        android:layout_below="@+id/name"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/vaccinecontactE"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/cl1"
+            android:textColor="#f2efdb"
+            android:maxLength="50"
+            android:hint="Contact Number" />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#f2efdb"
+        android:textColorHint="#f2efdb"
+        android:id="@+id/address"
+        android:layout_below="@+id/contactnum"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/vaccineaddressE"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/cl1"
+            android:textColor="#f2efdb"
+            android:maxLength="50"
+            android:hint="Address" />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/vaccinefilebutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/vaccinephoto"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#b97a57"
+        android:text="Choose File" />
+
+    <TextView
+        android:id="@+id/vaccinephoto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/address"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:text="Senior Citizen ID (Required)"
+        android:textColor="#fda47e" />
+
+    <ImageView
+        android:id="@+id/vaccineimage"
+        android:layout_width="47dp"
+        android:layout_height="52dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="100dp"
+        android:layout_marginRight="100dp"
+        android:layout_marginBottom="320dp"
+        android:visibility="invisible"/>
+
+
+</RelativeLayout>
